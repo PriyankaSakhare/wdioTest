@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="watches" timestamp="2021-01-26T17:59:04" time="7.43" tests="5" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="watches"/>
+      <property name="capabilities" value="chrome.88_0_4324_104.windows"/>
+      <property name="file" value=".\test\specs\watches.js"/>
+    </properties>
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_verify_watches_category_list" time="0.846">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/elements - {"using":"css selector","value":"section[id=\"s0-16-13-0-1[0]-0-0\"] ul li"}
+RESULT: {"using":"css selector","value":"section[id=\"s0-16-13-0-1[0]-0-0\"] ul li"}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/element/632e0de2-3598-4960-ac53-bedd2088449d/text - {}
+RESULT: {}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/element/9070f1ab-6820-46b3-8ff5-3ade8cf347ae/text - {}
+RESULT: {}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/element/e36925f9-96d8-40ef-bb5c-7b0b998a9cb7/text - {}
+RESULT: {}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/element/1aa5fce6-03be-4df1-b1c0-6a398116e213/text - {}
+RESULT: {}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/element/2703fbc1-9224-41ec-a97b-6e90a857ed73/text - {}
+RESULT: {}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/element/90cf557f-71a9-433c-ac6c-7eef9071912e/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_show_the_banner_container" time="0.061">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/element - {"using":"css selector","value":"section.b-promobanner"}
+RESULT: {"using":"css selector","value":"section.b-promobanner"}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8a2e20db-467d-4d4f-a8bf-22b96e801a57","ELEMENT":"8a2e20db-467d-4d4f-a8bf-22b96e801a57"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8a2e20db-467d-4d4f-a8bf-22b96e801a57","ELEMENT":"8a2e20db-467d-4d4f-a8bf-22b96e801a57"}]}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_show_the_banner_title" time="0.051">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/element - {"using":"css selector","value":".b-promobanner__info-title"}
+RESULT: {"using":"css selector","value":".b-promobanner__info-title"}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/element/05ef2111-234f-4aff-b925-d169b6c4b53a/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_contain_link_on_banner_and_verify_link_is_clickable" time="0.265">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/element/8263d3df-6f3e-4e10-869b-728899f0d498/attribute/href - {}
+RESULT: {}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8263d3df-6f3e-4e10-869b-728899f0d498","ELEMENT":"8263d3df-6f3e-4e10-869b-728899f0d498"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8263d3df-6f3e-4e10-869b-728899f0d498","ELEMENT":"8263d3df-6f3e-4e10-869b-728899f0d498"}]}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (3808 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8263d3df-6f3e-4e10-869b-728899f0d498","ELEMENT":"8263d3df-6f3e-4e10-869b-728899f0d498"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (3808 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"8263d3df-6f3e-4e10-869b-728899f0d498","ELEMENT":"8263d3df-6f3e-4e10-869b-728899f0d498"}]}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_click_on_shop_button_and_verify_the_url" time="1.966">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: POST /session/a001ecbad4712cf63b33d79a85b2a9e1/element/8263d3df-6f3e-4e10-869b-728899f0d498/click - {}
+RESULT: {}
+COMMAND: GET /session/a001ecbad4712cf63b33d79a85b2a9e1/url - {}
+RESULT: {}
+COMMAND: DELETE /session/a001ecbad4712cf63b33d79a85b2a9e1 - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

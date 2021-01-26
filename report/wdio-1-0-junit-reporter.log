@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="watches" timestamp="2021-01-26T17:59:07" time="7.313" tests="5" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="watches"/>
+      <property name="capabilities" value="firefox.84_0_2.windows"/>
+      <property name="file" value=".\test\specs\watches.js"/>
+    </properties>
+    <testcase classname="firefox.84_0_2.windows.watches" name="should_verify_watches_category_list" time="0.279">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/elements - {"using":"css selector","value":"section[id=\"s0-16-13-0-1[0]-0-0\"] ul li"}
+RESULT: {"using":"css selector","value":"section[id=\"s0-16-13-0-1[0]-0-0\"] ul li"}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/d8d54473-7cd0-46ed-8397-d70714a61a30/text - {}
+RESULT: {}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/240d2c1f-b5e9-4761-bdf8-64ee6b63cbda/text - {}
+RESULT: {}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/5739ca3f-0e9a-476a-819b-cf49f667949f/text - {}
+RESULT: {}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/e2fb6a4d-c575-4163-8b97-2b204b7705eb/text - {}
+RESULT: {}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/86815dcd-0c49-4ea1-b74b-3eeb17d964cd/text - {}
+RESULT: {}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/97f0e545-315b-40e5-8e0f-8b856981245c/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.84_0_2.windows.watches" name="should_show_the_banner_container" time="0.036">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element - {"using":"css selector","value":"section.b-promobanner"}
+RESULT: {"using":"css selector","value":"section.b-promobanner"}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/91355d44-fac3-4edb-acd5-6bceaf76beae/displayed - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.84_0_2.windows.watches" name="should_show_the_banner_title" time="0.048">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element - {"using":"css selector","value":".b-promobanner__info-title"}
+RESULT: {"using":"css selector","value":".b-promobanner__info-title"}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/ca234e01-2622-4c32-9060-52cb29d9c45b/text - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.84_0_2.windows.watches" name="should_contain_link_on_banner_and_verify_link_is_clickable" time="0.145">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/a6742895-e64a-41bc-9586-bb83386f0b8a/attribute/href - {}
+RESULT: {}
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/a6742895-e64a-41bc-9586-bb83386f0b8a/displayed - {}
+RESULT: {}
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (3808 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a6742895-e64a-41bc-9586-bb83386f0b8a","ELEMENT":"a6742895-e64a-41bc-9586-bb83386f0b8a"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (3808 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"a6742895-e64a-41bc-9586-bb83386f0b8a","ELEMENT":"a6742895-e64a-41bc-9586-bb83386f0b8a"}]}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.84_0_2.windows.watches" name="should_click_on_shop_button_and_verify_the_url" time="2.144">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: POST /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/element/a6742895-e64a-41bc-9586-bb83386f0b8a/click - {}
+RESULT: {}
+COMMAND: GET /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8/url - {}
+RESULT: {}
+COMMAND: DELETE /session/d692a2ad-f6ea-4ced-b453-e3ce15c43ca8 - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
