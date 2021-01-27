@@ -1,0 +1,102 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1611762358546' stop='1611762369605'>
+    <name>watches</name>
+    <title>watches</title>
+    <test-cases>
+        <test-case start='1611762358547' status='broken' stop='1611762369604'>
+            <name>"before all" hook for watches</name>
+            <title>"before all" hook for watches</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-88.0.4324.104'/>
+            </parameters>
+            <steps>
+                <step start='1611762358559' status='passed' stop='1611762361198'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='75d3c80b-a3a4-4a67-bad0-ffcefe146b68-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1611762361201' status='passed' stop='1611762361536'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='883a0aba-7022-416e-a2c4-909f30895fab-attachment.json' type='application/json' size='85'/>
+                        <attachment title='Response' source='d5594080-1b91-4e3d-b104-c8d0cf6153e4-attachment.json' type='application/json' size='184'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1611762361551' status='passed' stop='1611762361930'>
+                    <name>GET /session/:sessionId/element/baca3f0a-efe3-467e-8fc7-a644ad152dfa/rect</name>
+                    <title>GET /session/:sessionId/element/baca3f0a-efe3-467e-8fc7-a644ad152dfa/rect</title>
+                    <attachments>
+                        <attachment title='Response' source='7ee5ee19-4206-4d74-ae21-68b47c04b6e8-attachment.json' type='application/json' size='87'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1611762361930' status='passed' stop='1611762362168'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='393d6e5f-33d6-43ce-a8a5-6245bf0beed9-attachment.json' type='application/json' size='158'/>
+                        <attachment title='Response' source='8ac0030e-b843-4ac1-9478-8e9643760c81-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1611762362168' status='passed' stop='1611762362196'>
+                    <name>POST /session/:sessionId/actions</name>
+                    <title>POST /session/:sessionId/actions</title>
+                    <attachments>
+                        <attachment title='Request' source='5e998d8a-bcf8-4095-a0e8-b3238a556651-attachment.json' type='application/json' size='288'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1611762362196' status='passed' stop='1611762362215'>
+                    <name>DELETE /session/:sessionId/actions</name>
+                    <title>DELETE /session/:sessionId/actions</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1611762362217' status='passed' stop='1611762362262'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='9591a46b-3c18-4ebf-bdfd-dce7b8a138ea-attachment.json' type='application/json' size='96'/>
+                        <attachment title='Response' source='9796978c-56bb-4734-bc8d-fb83be3db342-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1611762362272' status='passed' stop='1611762369579'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='937858a2-d91b-4c3d-9eab-c46337ed51e9-attachment.json' type='application/json' size='5893'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element (".hl-cat-nav__sub-cat-col a[href *="Watches-Parts"]") still not displayed after 3000ms</message>
+                <stack-trace>Error: element (".hl-cat-nav__sub-cat-col a[href *="Watches-Parts"]") still not displayed after 3000ms
+                    at C:\Users\PriyankaSakhare\webdriverio-test\node_modules\@wdio\runner\node_modules\webdriverio\build\commands\browser\waitUntil.js:22:23
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\PriyankaSakhare\webdriverio-test\node_modules\@wdio\runner\node_modules\webdriverio\build\middlewares.js:17:32)
+                    at Element.runCommandWithHooks (C:\Users\PriyankaSakhare\webdriverio-test\node_modules\@wdio\sync\build\wrapCommand.js:70:25)
+                    at Element.runCommandWithHooks (C:\Users\PriyankaSakhare\webdriverio-test\node_modules\@wdio\sync\build\wrapCommand.js:65:24)
+                    at Element.wrapCommandFn (C:\Users\PriyankaSakhare\webdriverio-test\node_modules\@wdio\sync\build\wrapCommand.js:44:44)
+                    at Element.el (C:\Users\PriyankaSakhare\webdriverio-test\node_modules\@wdio\runner\node_modules\webdriverio\build\middlewares.js:34:12)
+                    at exports.waitAndClick (C:/Users/PriyankaSakhare/webdriverio-test/test/utilities/helper.js:12:5)
+                    at Context.&lt;anonymous> (C:/Users/PriyankaSakhare/webdriverio-test/test/specs/watches.js:19:6)
+                    at Context.executeSync (C:\Users\PriyankaSakhare\webdriverio-test\node_modules\@wdio\sync\build\index.js:25:22)
+                    at C:\Users\PriyankaSakhare\webdriverio-test\node_modules\@wdio\sync\build\index.js:46:68</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

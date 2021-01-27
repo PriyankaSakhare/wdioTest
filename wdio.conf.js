@@ -172,12 +172,12 @@ exports.config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000,
-        compilers: ['js:babel-core/register'],
+        //compilers: ['js:babel-core/register'],
         require: ['@babel/register']
     },
     //priyanka added
-   // before (capabilities, specs) {
-     //   require("./test/specs/watches.js") // add here
+   //before (capabilities, specs) {
+   //require("./src/wdio/commands") // add here
     //},
     //
     // =====
