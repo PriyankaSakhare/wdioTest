@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="watches" timestamp="2021-01-27T15:49:36" time="12.349" tests="5" failures="0" errors="0" skipped="0">
+  <testsuite name="watches" timestamp="2021-01-27T15:52:35" time="15.577" tests="5" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="watches"/>
       <property name="capabilities" value="chrome.88_0_4324_104.windows"/>
       <property name="file" value=".\test\specs\watches.js"/>
     </properties>
-    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_verify_watches_category_list" time="2.249">
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_verify_watches_category_list" time="2.197">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/window/maximize - {}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/elements - {"using":"css selector","value":"section[id=\"s0-16-13-0-1[0]-0-0\"] ul li"}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/elements - {"using":"css selector","value":"section[id=\"s0-16-13-0-1[0]-0-0\"] ul li"}
 RESULT: {"using":"css selector","value":"section[id=\"s0-16-13-0-1[0]-0-0\"] ul li"}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/element/700a1f0a-e1a6-47a9-9adb-1925796a02af/text - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/element/a4f9b1ce-c7cd-42f9-88fb-ca70872d622f/text - {}
 RESULT: {}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/element/f13f468c-7419-4ba9-aee0-7bad1d4b1298/text - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/element/68b24efe-c43b-4a5d-9e22-66bdb33a0f5e/text - {}
 RESULT: {}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/element/55a951f7-b167-4acb-9871-1b786b2ed1da/text - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/element/86bff9f8-b737-4ed2-b3d6-31595c97ec0a/text - {}
 RESULT: {}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/element/c2918d64-85db-4a4e-a689-0484d6fd3154/text - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/element/43e744db-99df-4049-9556-20c8ae56ed1d/text - {}
 RESULT: {}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/element/47dba4ef-2498-4745-963f-97ef5d279b28/text - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/element/86d1b87d-2c6d-43b3-91ef-c324426a6794/text - {}
 RESULT: {}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/element/821b8845-4129-4f2c-89d6-06cba19f7ee3/text - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/element/6598e25c-f3d1-4f64-bb03-fe9c0bccbb87/text - {}
 RESULT: {}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_show_the_banner_container" time="0.144">
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_show_the_banner_container" time="0.233">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/window/maximize - {}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/element - {"using":"css selector","value":"section.b-promobanner"}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/element - {"using":"css selector","value":"section.b-promobanner"}
 RESULT: {"using":"css selector","value":"section.b-promobanner"}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"dde2b0ec-4e41-46ba-88af-3c37bc4b4e64","ELEMENT":"dde2b0ec-4e41-46ba-88af-3c37bc4b4e64"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"dde2b0ec-4e41-46ba-88af-3c37bc4b4e64","ELEMENT":"dde2b0ec-4e41-46ba-88af-3c37bc4b4e64"}]}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"85245b37-41c9-4ecb-b2e9-8238a18067b5","ELEMENT":"85245b37-41c9-4ecb-b2e9-8238a18067b5"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"85245b37-41c9-4ecb-b2e9-8238a18067b5","ELEMENT":"85245b37-41c9-4ecb-b2e9-8238a18067b5"}]}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_show_the_banner_title" time="0.104">
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_show_the_banner_title" time="0.194">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/window/maximize - {}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/element - {"using":"css selector","value":".b-promobanner__info-title"}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/element - {"using":"css selector","value":".b-promobanner__info-title"}
 RESULT: {"using":"css selector","value":".b-promobanner__info-title"}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/element/d86d01af-8e42-43b1-83ac-f9406e262fba/text - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/element/70c9ac3e-2186-4c56-ac0f-156fc808db69/text - {}
 RESULT: {}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_contain_link_on_banner_and_verify_link_is_clickable" time="0.392">
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_contain_link_on_banner_and_verify_link_is_clickable" time="0.305">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/window/maximize - {}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/element - {"using":"css selector","value":".b-promobanner__info-btn"}
 RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/element/db251808-f250-48f1-9910-afbec151f12b/attribute/href - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/element/c97ff54f-5957-4a96-a5a6-74162b08d5c1/attribute/href - {}
 RESULT: {}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/element - {"using":"css selector","value":".b-promobanner__info-btn"}
 RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"db251808-f250-48f1-9910-afbec151f12b","ELEMENT":"db251808-f250-48f1-9910-afbec151f12b"}]}
-RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"db251808-f250-48f1-9910-afbec151f12b","ELEMENT":"db251808-f250-48f1-9910-afbec151f12b"}]}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (3808 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"db251808-f250-48f1-9910-afbec151f12b","ELEMENT":"db251808-f250-48f1-9910-afbec151f12b"}]}
-RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (3808 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"db251808-f250-48f1-9910-afbec151f12b","ELEMENT":"db251808-f250-48f1-9910-afbec151f12b"}]}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c97ff54f-5957-4a96-a5a6-74162b08d5c1","ELEMENT":"c97ff54f-5957-4a96-a5a6-74162b08d5c1"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (5353 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c97ff54f-5957-4a96-a5a6-74162b08d5c1","ELEMENT":"c97ff54f-5957-4a96-a5a6-74162b08d5c1"}]}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/execute/sync - {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (3808 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c97ff54f-5957-4a96-a5a6-74162b08d5c1","ELEMENT":"c97ff54f-5957-4a96-a5a6-74162b08d5c1"}]}
+RESULT: {"script":"return (function isElementClickable(elem) {\n    if (!elem.getBoundingClientRect || !elem.scrollIntoView || !elem.contains || !elem.getClientRects || !document.elementFromPoint) {\n        return false; ... (3808 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c97ff54f-5957-4a96-a5a6-74162b08d5c1","ELEMENT":"c97ff54f-5957-4a96-a5a6-74162b08d5c1"}]}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_click_on_shop_button_and_verify_the_url" time="3.171">
+    <testcase classname="chrome.88_0_4324_104.windows.watches" name="should_click_on_shop_button_and_verify_the_url" time="2.898">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/window/maximize - {}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/element - {"using":"css selector","value":".b-promobanner__info-btn"}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/element - {"using":"css selector","value":".b-promobanner__info-btn"}
 RESULT: {"using":"css selector","value":".b-promobanner__info-btn"}
-COMMAND: POST /session/2da4ee10c0db63c01c357d99bdbde9b1/element/db251808-f250-48f1-9910-afbec151f12b/click - {}
+COMMAND: POST /session/1449ac5d72e5eae0278e76ea39a588bb/element/c97ff54f-5957-4a96-a5a6-74162b08d5c1/click - {}
 RESULT: {}
-COMMAND: GET /session/2da4ee10c0db63c01c357d99bdbde9b1/url - {}
+COMMAND: GET /session/1449ac5d72e5eae0278e76ea39a588bb/url - {}
 RESULT: {}
-COMMAND: DELETE /session/2da4ee10c0db63c01c357d99bdbde9b1 - {}
+COMMAND: DELETE /session/1449ac5d72e5eae0278e76ea39a588bb - {}
 RESULT: {}
 ]]>
       </system-out>

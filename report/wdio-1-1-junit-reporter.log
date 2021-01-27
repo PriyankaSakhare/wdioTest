@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Ebay_Product_Search" timestamp="2021-01-27T15:49:42" time="8.171" tests="4" failures="0" errors="0" skipped="0">
+  <testsuite name="Ebay_Product_Search" timestamp="2021-01-27T15:52:41" time="9.39" tests="4" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Ebay Product Search"/>
       <property name="capabilities" value="firefox.85_0.windows"/>
       <property name="file" value=".\test\specs\search.js"/>
     </properties>
-    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_open_url_and_compare_vaild_title" time="2.592">
+    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_open_url_and_compare_vaild_title" time="3.502">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/window/maximize - {}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/url - {"url":"https://www.ebay.com/"}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/url - {"url":"https://www.ebay.com/"}
 RESULT: {"url":"https://www.ebay.com/"}
-COMMAND: GET /session/4e997ea1-848f-4613-ad19-7b81476de523/title - {}
+COMMAND: GET /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/title - {}
 RESULT: {}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_sercah_a_product_and_verify_the_serch_text_value" time="5.331">
+    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_sercah_a_product_and_verify_the_serch_text_value" time="5.691">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/window/maximize - {}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/element - {"using":"css selector","value":"#gh-ac"}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element - {"using":"css selector","value":"#gh-ac"}
 RESULT: {"using":"css selector","value":"#gh-ac"}
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/element/8036ff48-bd2b-47f4-be59-4816ec396ecf/value - {"text":"Laptop"}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element/dbb6ae72-f254-458f-9d41-7836aabf0622/value - {"text":"Laptop"}
 RESULT: {"text":"Laptop"}
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/element - {"using":"css selector","value":"#gh-btn"}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element - {"using":"css selector","value":"#gh-btn"}
 RESULT: {"using":"css selector","value":"#gh-btn"}
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/element/90d5f689-36f4-4dcc-a631-a42b3cd6bbb1/click - {}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element/789cc6b5-5964-4322-90a0-ccab99d7c1ca/click - {}
 RESULT: {}
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/element - {"using":"css selector","value":"#gh-ac"}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element - {"using":"css selector","value":"#gh-ac"}
 RESULT: {"using":"css selector","value":"#gh-ac"}
-COMMAND: GET /session/4e997ea1-848f-4613-ad19-7b81476de523/element/c7bd2864-d1ba-4b9a-b484-22015de229d9/property/value - {}
+COMMAND: GET /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element/9d88795e-5d0c-4794-b355-feed571e54fe/property/value - {}
 RESULT: {}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_redirect_to_the_new_page_and_verify_title_of_new_page" time="0.035">
+    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_redirect_to_the_new_page_and_verify_title_of_new_page" time="0.023">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/window/maximize - {}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/window/maximize - {}
 RESULT: {}
-COMMAND: GET /session/4e997ea1-848f-4613-ad19-7b81476de523/title - {}
+COMMAND: GET /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/title - {}
 RESULT: {}
 ]]>
       </system-out>
     </testcase>
-    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_update_the_serach_catagory" time="0.176">
+    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_update_the_serach_catagory" time="0.132">
       <system-out>
         <![CDATA[
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/window/maximize - {}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/window/maximize - {}
 RESULT: {}
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
 RESULT: {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
-COMMAND: GET /session/4e997ea1-848f-4613-ad19-7b81476de523/element/4470b25d-2868-463e-818c-08774cd0d43f/text - {}
+COMMAND: GET /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element/2504e54d-2ed4-4e0a-bb41-c8a74f0ebf48/text - {}
 RESULT: {}
-COMMAND: POST /session/4e997ea1-848f-4613-ad19-7b81476de523/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
+COMMAND: POST /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
 RESULT: {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
-COMMAND: GET /session/4e997ea1-848f-4613-ad19-7b81476de523/element/4470b25d-2868-463e-818c-08774cd0d43f/text - {}
+COMMAND: GET /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851/element/2504e54d-2ed4-4e0a-bb41-c8a74f0ebf48/text - {}
 RESULT: {}
-COMMAND: DELETE /session/4e997ea1-848f-4613-ad19-7b81476de523 - {}
+COMMAND: DELETE /session/b2349f1f-40c4-4a17-a69d-e9ad057ad851 - {}
 RESULT: {}
 ]]>
       </system-out>

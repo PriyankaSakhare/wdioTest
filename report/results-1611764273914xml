@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Ebay_Product_Search" timestamp="2021-01-27T16:18:08" time="11.387" tests="4" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Ebay Product Search"/>
+      <property name="capabilities" value="firefox.85_0.windows"/>
+      <property name="file" value=".\test\specs\search.js"/>
+    </properties>
+    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_open_url_and_compare_vaild_title" time="6.176">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/url - {"url":"https://www.ebay.com/"}
+RESULT: {"url":"https://www.ebay.com/"}
+COMMAND: GET /session/f42f3271-53d4-4289-8313-507ee1b8f902/title - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_sercah_a_product_and_verify_the_serch_text_value" time="4.976">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/element - {"using":"css selector","value":"#gh-ac"}
+RESULT: {"using":"css selector","value":"#gh-ac"}
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/element/ef252b87-ca53-4033-bf25-99fe8a64ab08/value - {"text":"Laptop"}
+RESULT: {"text":"Laptop"}
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/element - {"using":"css selector","value":"#gh-btn"}
+RESULT: {"using":"css selector","value":"#gh-btn"}
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/element/6e0832a0-4685-4e6b-93c2-e7857fad04a4/click - {}
+RESULT: {}
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/element - {"using":"css selector","value":"#gh-ac"}
+RESULT: {"using":"css selector","value":"#gh-ac"}
+COMMAND: GET /session/f42f3271-53d4-4289-8313-507ee1b8f902/element/9e7bca71-0474-4a30-9006-8a1a14c2b124/property/value - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_redirect_to_the_new_page_and_verify_title_of_new_page" time="0.03">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/window/maximize - {}
+RESULT: {}
+COMMAND: GET /session/f42f3271-53d4-4289-8313-507ee1b8f902/title - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.85_0.windows.Ebay_Product_Search" name="should_update_the_serach_catagory" time="0.158">
+      <system-out>
+        <![CDATA[
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/window/maximize - {}
+RESULT: {}
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
+RESULT: {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
+COMMAND: GET /session/f42f3271-53d4-4289-8313-507ee1b8f902/element/b88703ce-fe9a-49dd-bf9f-1c1746803d79/text - {}
+RESULT: {}
+COMMAND: POST /session/f42f3271-53d4-4289-8313-507ee1b8f902/element - {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
+RESULT: {"using":"css selector","value":"#gh-cat option:nth-child(1)"}
+COMMAND: GET /session/f42f3271-53d4-4289-8313-507ee1b8f902/element/b88703ce-fe9a-49dd-bf9f-1c1746803d79/text - {}
+RESULT: {}
+COMMAND: DELETE /session/f42f3271-53d4-4289-8313-507ee1b8f902 - {}
+RESULT: {}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
